@@ -26,7 +26,7 @@
         <div class="relative">
           <div
             :class="{ 'opacity-0': state < 1 }"
-            class="self-start text-lg font-medium leading-6 text-gray-900 duration-1000 selection:bg-yellow-400 dark:text-white dark:selection:bg-yellow-600 dark:selection:text-gray-900">
+            class="self-start text-lg font-medium leading-6 text-gray-900 duration-1000 selection:bg-blue-400 dark:text-white dark:selection:bg-blue-600 dark:selection:text-gray-900">
             It's been…
           </div>
           <dl
@@ -42,16 +42,16 @@
               :key="unit"
               class="w-[100px] overflow-hidden rounded-lg bg-white px-4 py-5 shadow transition-colors duration-500 dark:bg-gray-800 sm:w-[108px] sm:p-6">
               <dd
-                class="text-3xl font-semibold text-gray-900 transition-colors duration-500 selection:bg-yellow-400 dark:text-white dark:selection:bg-yellow-600 dark:selection:text-gray-900"
+                class="text-3xl font-semibold text-gray-900 transition-colors duration-500 selection:bg-blue-400 dark:text-white dark:selection:bg-blue-600 dark:selection:text-gray-900"
                 v-text="parseInt(value)" />
               <dt
-                class="mt-1 truncate text-sm font-medium text-yellow-600 transition-colors duration-500 selection:bg-yellow-400 selection:text-gray-900 dark:text-yellow-400 dark:selection:bg-yellow-600"
+                class="mt-1 truncate text-sm font-medium text-blue-600 transition-colors duration-500 selection:bg-blue-400 selection:text-gray-900 dark:text-blue-400 dark:selection:bg-blue-600"
                 v-text="parseInt(value) === 1 ? unit.slice(0, -1) : unit" />
             </div>
           </dl>
           <div
             :class="{ 'opacity-0': state < 3 }"
-            class="mt-5 self-end text-right text-lg font-medium leading-6 text-gray-900 duration-1000 selection:bg-yellow-400 dark:text-white dark:selection:bg-yellow-600 dark:selection:text-gray-900">
+            class="mt-5 self-end text-right text-lg font-medium leading-6 text-gray-900 duration-1000 selection:bg-blue-400 dark:text-white dark:selection:bg-blue-600 dark:selection:text-gray-900">
             …since we met{{ useYears ? '.' : '!' }}
             <HeartIcon
               v-if="!useYears"

@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@heroicons/vue": "^2.0.17",
+    "@nuxtjs/tailwindcss": "^6.6.7",
+    "@types/node": "^18",
+    "luxon": "^3.3.0",
+    "nuxt": "^3.4.3",
+    "prettier": "^2.8.8",
+    "prettier-config-standard": "^5.0.0",
+    "prettier-plugin-tailwindcss": "^0.2.8"
+  }
+}

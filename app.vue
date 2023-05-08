@@ -20,7 +20,7 @@
         :class="{ '!opacity-0': state < 2 }"
         class="relative mx-auto mt-6 flex max-w-screen-sm flex-col px-4 py-12 sm:px-6 lg:max-w-screen-md lg:px-8 lg:py-24">
         <div
-          class="pointer-events-none absolute -right-12 top-8 rotate-[30deg] text-8xl opacity-10 transition-opacity duration-1000 lg:top-12 lg:text-9xl">
+          class="pointer-events-none absolute -right-12 top-8 text-8xl opacity-10 transition-opacity duration-1000 lg:top-12 lg:text-9xl">
           🥭
         </div>
         <div class="relative">

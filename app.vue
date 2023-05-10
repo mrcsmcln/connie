@@ -84,7 +84,7 @@ const useYears = DateTime.local() - then.plus({ years: 1 }) > 0
 function getDiff() {
   return then
     .diff(
-      DateTime.local(),
+      DateTime.local({ zone: 'America/New_York' }),
       ['months', 'days', 'hours', 'minutes', 'seconds'].concat(
         useYears ? ['years'] : []
       )
